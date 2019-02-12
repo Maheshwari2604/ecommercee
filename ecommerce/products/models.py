@@ -34,7 +34,7 @@ class product_price(models.Model):
     product_Image = models.ForeignKey(product_Image)
     #product_offer = models.ForeignKey(product_discount)
     #ye jo bhii aayegsaa ye approve loma se aayegsaa
-    price = models.PositiveIntegerField(default = 0.00)
+    price = models.IntegerField(default = 0.00)
     lastupdated = models.DateTimeField(auto_now=True, auto_now_add=False)
 
     def __unicode__(self):

@@ -42,7 +42,7 @@
                             </div>
                             <div class="col-sm-4 text-left pr-1">
                                 {% for item in product.product_discount_set.all %}  
-                                    <span class="text-success">{{ item.Offer }}% OFF</span>
+                                    <span class="text-success">{{ item.Offer_in_percentage }}% OFF</span>
                                 {% endfor %}
                             </div>
 

@@ -12,7 +12,7 @@ class vendor_master(models.Model):
     Vendor_mandi_name = models.ForeignKey(md, blank=True)
     loma_id = models.ForeignKey(Loma_master)
     loma_name = models.CharField(max_length=120)
-    #loma_zone = models.CharField(max_length=120)
+    loma_zone = models.CharField(max_length=120)
     username = models.CharField(max_length=120, unique = True)
     password = models.CharField(max_length=120)
     vendor_mobile_no = models.IntegerField(default = 0.00)
